@@ -1,0 +1,36 @@
+    Crie um dentro do repositório (GitHub) EST um projeto chamado ERP_System. Utilizaremos
+    o projeto para realizar os exercícios relacionados aos assuntos que abordaremos durante a
+    matéria. O objetivo do ERP_System será o de gerenciar produtos eletrônicos, tanto as
+    informações dos produtos como as informações de estoque, vendas, compras etc.
+
+
+    Você será o responsável por construir a estrutura de pacotes, classes, testes e todos os
+    demais componentes do sistema. Os dados do sistema serão persistidos na memória RAM,
+    por tanto cada vez que o sistema for iniciado todos os dados devem ser carregados.
+
+
+    A aplicação será executada no terminal.
+        Para dar início ao desenvolvimento crie as funcionalidades solicitadas a seguir.
+
+        Funcionalidade 1: Ao iniciar o sistema leia os dados do arquivo Products.csv e persista-os
+        na memória (guarde os dados em uma lista). Cuidado deve ser possível acessá-los a
+        qualquer momento e de qualquer lugar do sistema.
+
+
+        Funcionalidade 2: Crie um menu (Cuidado: será expandido com novas opções) com as
+            seguintes opções:
+                1 – Buscar produto por código.
+                2 – Buscar produto por nome.
+
+        Funcionalidade 3: Crie uma funcionalidade para buscar um produto pelo ID. Caso seja
+            encontrado exiba as informações, caso contrário exiba uma mensagem informando que o
+            produto não foi encontrado.
+
+        Funcionalidade 4: Crie uma funcionalidade para buscar um produto pelo nome (deve
+            contemplar o nome completo ou parte do nome). Caso seja encontrado exiba as informações,
+            caso contrário exiba uma mensagem informando que o produto não foi encontrado. Caso
+            seja encontrado mais de um produto exiba todos em forma de lista.
+
+        Observação: o arquivo Products.csv foi baixado de
+        https://www.kaggle.com/datafiniti/electronic-products-prices. Foi feita uma modificação na
+        qual se removeu o campo ID e foi recriado guardando valores numéricos sequenciais.

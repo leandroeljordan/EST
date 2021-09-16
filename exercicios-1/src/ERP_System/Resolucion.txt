@@ -1,0 +1,40 @@
+        Gerenciador de Productos Electrónicos.
+                    (ERP_System)
+
+Estructura de paquetes, clases y test y todos los demás componentes del sistema.
+    Datos se mantienen en la ram.
+        (Cargar datos todas las veces que se inicie el sistema)
+
+Implementar siguientes funcionalidades:
+
+    Funcionalidad 1: Cargar datos de archivo csv.
+                        Guardar en memomia (Lista). (Tener acceso de cualquier lugar).
+
+
+    Funcionalidad 2: Crear Menu (Expanción futura).
+                        1 - Buscar Producto por Código.
+                        2 - Buscar Producto por Nombre
+
+
+    Funcionalidad 3: Al buscar producto por Código
+                        1: Mostrar Informaciones.
+                        0: Mensaje de no encontrado.
+
+    Funcionalidad 4: Al buscar por Nombre (Completo o por partes).
+                        1: Mostrar Informaciones.
+                            - Si mas de uno mostrar todos en lista.
+                        2: Informar de no encontrado
+
+
+    Resolucion:
+    Crear:
+        Clase Inicial:
+            Main con Menu.
+            Dentro de la Clase Inicial:
+                - Cargar Datos --> Guardar Datos Privados
+
+        Clase Buscar Producto (B_P):
+            Método Buscar Por Código (B_P_C).
+            Método Buscar Por Nombre (B_P_N).
+            Mostrar Infor Producto (M_I_P).
+            Mostar Not Found (M_Not_FOUND).
