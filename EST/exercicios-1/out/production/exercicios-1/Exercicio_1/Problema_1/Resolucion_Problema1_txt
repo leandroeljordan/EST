@@ -1,0 +1,69 @@
+|||Problema 1:|||
+|||-----------|||
+
+Você está criando um programa que é uma agenda telefônica. O programa deve persistir na memória RAM
+uma lista que guarda o nome e o telefone de cada pessoa registrada. Para popular a base de dados seu
+programa receberá uma lista (string) contendo o nome e número de cada pessoa. Em conjunto também
+como entrada receberá uma lista com um ou mais nomes a serem pesquisados. Logo após populada a base
+de dados o programa deverá buscar pelos nomes pesquisados e retornar para cada critério de pesquisa uma
+resposta.
+
+_____________
+|||Entrada|||
+|||-------|||
+
+O primeiro parâmetro será um inteiro N contendo o número de entradas da agenda. O segundo parâmetro
+será uma lista contendo os nomes e os telefones. O terceiro parâmetro uma lista contendo apenas os nomes
+a serem pesquisados.
+Regras:
+O nome de uma pessoa consiste apenas de caracteres em lower-case e pode estar formado da seguinte
+forma nome-sobrenome ou sobrenome-nome. Cada número de telefone contém 8 dígitos.
+Caso a pessoa desejada não seja encontrada a frase “Não encontrado” deve ser retornada.
+
+______________
+|||Input 0:|||
+|||--------|||
+
+3
+jose perez
+99925554
+maria cabral
+99854741
+pedro cardozo
+98556632
+jose perez
+cardozo pedro
+lara fonseca
+
+Input de BUSQUEDA:
+    jose perez
+    cardozo pedro
+    lara Fonseca
+
+_______________
+|||Output 0:|||
+|||---------|||
+
+jose perez=99925554
+pedro cardozo=98556632
+“Não encontrado”
+
+____________________
+|||Procedimiento:|||
+|||______________|||
+Crear un Arreglo de Array donde se guardarán los datos de Nombre, Apellido y numero telefónico.
+El arreglo tendrá el tamaño asignado por el primer valor ingresado. Posterior a esto se recibirá
+el String nombre y se pondrá todo en minusculas al igual que se cambiará el espacio por guión.
+
+
+INPUT C + V
+3
+jose perez
+99925554
+maria cabral
+99854741
+pedro cardozo
+98556632
+jose perez
+cardozo pedro
+lara Fonseca

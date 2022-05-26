@@ -1,0 +1,67 @@
+    Dando continuidade ao desenvolvimento do sistema ERP_System, desenvolveremos um
+    conjunto de funcionalidades que servirão como a Avaliação 1 da matéria. Solicita-se que
+    esta novas funcionalidade seja desenvolvida dentro da base de código do sistema
+    desenvolvido durante o exercício anterior.
+
+
+        Funcionalidade 5:
+        Objetivo: manter o estoque com os produtos mais novos, para isso cada vez que é
+        solicitada a retirada de um produto deve ser entregue o mais antigo (isso significa que o
+        estoque será controlado utilizando o sistema FIFO).
+
+
+            Tarefa 1: crie uma estrutura que servirá para representar a entrada de um determinado
+            produto no estoque. Campos: data e quantidade. A lista com as novas entradas, deve estar
+            relacionada com a estrutura do produto.
+
+
+            Tarefa 2: quando iniciado o sistema crie randomicamente entradas para todos os produtos
+            que existem na base de dados.
+
+            Limitações: para cada produto crie no mínimo 1 entrada e no máximo 20. As
+            entradas devem estar armazenadas em uma fila. Utilize a classe Random para gerar
+            aleatoriamente os valores. Cada nova entrada deve possuir a quantidade mínima de 1 e
+            máxima de 100 (gere este valor randomicamente também). A data para todas as entradas
+            pode ser gerada de forma incremental a partir de uma data definida.
+
+
+            Tarefa 3: crie a seguinte entrada no menu do sistema:
+             3 – Retirar Produtos por Código.
+
+
+            Tarefa 4: quando o usuário selecionar a opção 3 o sistema deve solicitar o código do
+            produto e a quantidade do produto que deseja retirar.
+
+
+            • Caso o produto não exista, o sistema deve apresentar uma mensagem informando
+                que o produto não existe.
+
+            • Caso o produto exista e a quantidade no estoque seja insuficiente:
+            o O sistema deverá perguntar ao usuário se deseja retirar a quantidade
+            disponível:
+
+
+            ▪ SIM: o sistema retirar a quantidade disponível. O sistema deverá
+            remover da fila do estoque e listar cada um dos elementos retirados
+            da fila.
+
+
+            ▪ NÃO: o sistema voltar para o menu principal.
+
+            ▪ Entrada diferente de SIM e NÃO, volta a questionar o usuário.
+
+            • Caso o produto exista e o estoque seja suficiente:
+            o O sistema deverá remover da fila do estoque e listar os elementos
+            removidos da fila.
+
+            Cuidado: para cada entrada do estoque de cada produto a quantidade pode ser maior que
+            1. Caso o usuário solicite retirar 1 e a quantidade do primeiro elemento da fila seja 2, o
+            sistema deverá subtrair a quantidade solicitada e não remover o elemento da fila.
+
+
+
+
+
+
+
+
