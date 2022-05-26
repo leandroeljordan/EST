@@ -1,0 +1,27 @@
+Desenvolva um sistema para controle de almoxarifado.
+
+O sistema deverá contar com 2 threads, sendo que uma aumentará o estoque de um produto
+aleatório e outra removerá produtos.
+
+No almoxarifado existem 3 tipos de produtos, canetas, cadernos e folhas.
+
+Em cada execução das threads, deverá ser informado o produto e a quantidade inserida ou
+removida do almoxarifado.
+
+Ao final, deverá ser informado o estado atual do almoxarifado, com a quantidade de cada
+item.
+
+    2 Procesos Simultaneos...
+        .El Primero aumenta el Stock de un producto Aleatorio
+        .El Segundo elimina productos del Stock
+
+        3 Tipos de Productos:
+            -Canetas
+            -Cadernos
+            -Folhas
+
+Resolución:
+    Crearemos un Array para los productos, en donde tendremos en el [ID,Nombre,Cantidad]
+                                                                     INT, String, INT
+    Para Agregar y quitar productos se creará una clase con un atributo boolean para agregar o eliminar productos
+

@@ -1,0 +1,61 @@
+|Cadastro de Conductores		|
+|---------------------------------------|
+|-Nombre				|
+|-Tipo Habilitación (auto,moto,camion)	|
+|-Fecha de nacimiento			|
+|_______________________________________|
+|+Constructor tres parametros		|
+|+Getters(Nombre,T_habilitacion,fecha)	|
+|+Consulta Puntuación de multas		|
+|_______________________________________|
+
+
+
+ _______________________________________
+|Cadastro de 				|
+|---------------------------------------|
+|-Placa					|
+|-Color					|
+|-Año					|
+|_______________________________________|
+|+Getters(Placa,Color,año)		|
+|+Setters				|
+|+Consulta_de_multa_por_placa		|
+|_______________________________________|
+
+
+
+
+ _______________________________________
+|Cadastro de Propietarios		|
+|---------------------------------------|
+|-Tipo(P.Fisica o P.Juridica)		|
+|-Nombre				|
+|-CPF o CNPJ				|
+|-Lista de Vehículos que es dueño	|
+|_______________________________________|
+|+Getters(Tipo,Nombre,CPFoCNPJ,L.Vehicu)|
+|+Setters(Tipo,Nombre,CPFoCNPJ,L.Vehicu)|
+|+Compra_Vehiculo			|
+|+Vender_Vehiculo(Solo si sin multas)	|
+|_______________________________________|
+
+
+
+ _______________________________________
+|Cadastro de multas			|
+|---------------------------------------|
+|-Fecha_Multa				|
+|-Placa_Vehiculo			|
+|-Conductor_Multado			|
+|_______________________________________|
+|+Constructor con todos los datos	|
+|+Consultar Infracciones		|
+|_______________________________________|
+
+
+Tipos de Multas del sistema son:
+	Leve = 1 punto e R$50,00
+	Medio = 2 puntos e R$75,00
+	Grave = 3 puntos e R$150,00
+	Gravísima = 5 puntos e R$300,00

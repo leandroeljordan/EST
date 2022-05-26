@@ -1,0 +1,13 @@
+    Siga as instruções abaixo para implementar um exercicio de demostração de classes internas:
+
+    Crie uma interface Lamapda com métodos ligar() e desligar(), cujo contrato significa simplesmente
+    imprimir mensagens informativas na tela;
+
+    Crie uma classe FabricaLampada que possui duas classes internas aninhadas que implementam a
+    interface Lampada: Incandescente e Fluorescente;
+
+    Crie ainda um método construir(), que recebaum parâmetro indicando o tipo de lâmpada e retorne
+    o objeto Lampada criado;
+
+    Crie uma classe Exercicio01 com o método main(). Pergunte ao usuário qual lâmpada ele quer
+    construir, ligue e desligue a lámpada.
